@@ -1,0 +1,13 @@
+package org.example;
+
+// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
+// then press Enter. You can now see whitespace characters in your code.
+public class Main {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            Talkative talkative = new Talkative(i);
+            Thread thread = new Thread(talkative);
+            thread.start();
+        }
+    }
+}
